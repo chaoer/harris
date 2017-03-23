@@ -75,7 +75,7 @@ vector<pointData> Harris::getMaximaPoints(float percentage, int filterRange, int
                     if(sy < 0)
                         sy = 0;
 
-                    maximaSuppressionMat.at<int>(points[i].point.x+c, points[i].point.y+r) = 1;
+                    maximaSuppressionMat.at<int>(sx, sy) = 1;
                 }
             }
 
